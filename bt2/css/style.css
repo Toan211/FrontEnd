@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.box{
+    width: 900px;
+    border: 5px solid rgb(255, 0, 0);
+    margin: 50px auto;
+}
+
+.box2{
+    width: 870px;
+    border: 10px solid rgba(13, 197, 28, 0.87);
+    margin: 5px auto;
+}
+
+.center{
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 45px;
+}
