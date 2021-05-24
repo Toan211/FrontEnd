@@ -1,0 +1,44 @@
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+
+.inline{
+    display: inline;
+}
+
+.bot0{
+    bottom: 0;
+}
+
+.top0{
+    top: 0;
+}
+
+.right0{
+    right: 0;
+}
+
+.left0{
+    left: 0;
+}
+
+.center{
+    text-align: center;
+}
+
+.mid-vert-al{
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
+

@@ -1,0 +1,42 @@
+
+.ico{
+    display:block;
+    padding: 8px 0px 0px 8px;
+    
+}
+
+.ico:before{
+    content: '';
+    background:url(../images/camera-icon.png) no-repeat 0px 0px;
+    background-size:cover;
+    position:absolute;
+    display: block;
+    height: 16px;  /*height of icon */
+    width: 23px;  /*width of icon */
+    
+}
+
+.ico-circle{
+    width: 33px;
+    height: 33px;
+    margin-bottom: 11px;
+    margin-right: 5px;
+    border: 2px solid white;
+    border-radius: 100%;
+    background-color: rgb(192, 192, 192);
+}
+
+.ico-camera:before{  
+    content: '';
+    background:url(../images/camera-icon.png) no-repeat 0px 0px;
+    background-size:cover;
+    position:absolute;
+    display: block;
+    height: 21px;  /*height of icon */
+    width: 26px;  /*width of icon */
+}
+
+.ico-camera{
+    display: block;
+    padding: 5px 0px 0px 3px;
+}
