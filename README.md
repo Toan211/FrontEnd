@@ -1,3 +1,2 @@
 learning frontend
-test
-abc
+1: git and some trivial things
