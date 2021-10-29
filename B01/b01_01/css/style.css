@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box{
+    font-size: 20px;
+    margin: 40px auto;
+    
+    width: 50%;
+    border: 2px solid #ff0000;
+    padding: 20px;
+    position: relative;
+    text-align-last: center;
+    font-weight: bold;
+    
+
+}
+
+.box:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 6px solid #04ff26;
+  }
