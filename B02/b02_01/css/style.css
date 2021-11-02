@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg{
+    background-color: blue;
+}
+
+.block{
+    width: 500px;
+    height: 300px;
+    border: 3 solid blue;
+    margin: 40px auto;
+}
+
+.block p{
+    color: white;
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+    font-size: 30px;
+}
