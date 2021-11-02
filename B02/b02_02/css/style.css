@@ -1,54 +1,127 @@
 *{
     margin: 0px;
     padding: 0px;
-}
 
-.outer{
-    position: relative;
-    width: 600px;
-    height: 600px;
-    margin: 40px auto;
-}
-.bg{
-    background-color: blue;
-    border: 3 solid blue;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 1000;
-}
-
-.bg2{
-    background-color: rgb(229, 255, 0);
-    border: 3 solid rgb(229, 255, 0);
-    position: absolute;
-    left: -40px;
-    top: 20px;
-    z-index: 900;
-}
-
-.bg3{
-    background-color: rgb(0, 255, 21);
-    border: 3 solid rgb(0, 255, 21);
-    position: absolute;
-    left: 40px;
-    top: 80px;
-    z-index: 800;
-}
-
-.cent{
-    margin: 50px auto;
 }
 
 .block{
-    width: 500px;
-    height: 300px;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(0, 185, 0);
+    border: 3 solid rgb(0, 185, 0);
+    position: absolute;
 }
 
 .block p{
     color: white;
     text-align: center;
-    line-height: 300px;
+    line-height: 100px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.top-left{  
+    left: 0px;
+    top: 0px;
+    z-index: 1000; 
+}
+
+.top-right{  
+    right: 0px;
+    top: 0px;
+    z-index: 1000; 
+}
+
+
+
+.top-center{
+/* C1  ko xài vì dễ vỡ trang   
+    left: 0;
+    right: 0;
+    margin: auto; */
+
+/* C2     */
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+
+/* C3    
+    left: 50%;
+    margin-left: -100px */
+}
+
+.bot-right{  
+    right: 0px;
+    bottom: 0px;
+    z-index: 1000; 
+}
+
+.bot-left{  
+    left: 0px;
+    bottom: 0px;
+    z-index: 1000; 
+}
+
+.bot-center{
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+    
+}
+
+.mid-left{
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.mid-right{
+    
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.mid-center{
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mid-center > div > p{
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cent{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    border: 3 solid rgb(255, 0, 0);
+    position: absolute;
+}
+
+.center-top-left{
+    left: -50%;
+    top: -50%;
+}
+
+.center-top-right{
+    right: -50%;
+    top: -50%;
+}
+
+.center-bot-left{
+    left: -50%;
+    bottom: -50%;
+}
+
+.center-bot-right{
+    right: -50%;
+    bottom: -50%;
 }
