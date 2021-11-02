@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cent{
+    margin: 50px auto;
+}
+
+.block{
+    width: 500px;
+    height: 300px;
+    background-color: blue;
+    border: 3 solid blue;
+}
+
+.block p{
+    color: white;
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.block::before {
+    content: " ";
+    width: 500px;
+    height: 300px;
+    background-color: rgb(0, 255, 106);
+    border: 3 solid rgb(0, 255, 106);
+}
+
+.block::after{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(229, 255, 0);
+    border: 3 solid rgb(229, 255, 0);
+}
