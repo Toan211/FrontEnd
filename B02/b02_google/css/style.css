@@ -26,6 +26,8 @@
 
 .sign-in-btn:hover{
     background-color: #2667bb;
+    cursor: pointer;
+    
 }
 
 .sign-in-btn >a{
