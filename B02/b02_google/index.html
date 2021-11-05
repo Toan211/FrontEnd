@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <title>Google</title>
 </head>
 <body>
@@ -18,10 +22,10 @@
                     <a href="">Gmail</a>
                 </div>
                 <div class="h-image">
-                    <a href="">Image</a>
+                    <a href="">Images</a>
                 </div>
                 <div class= "h-icon">
-                    <a href=""><span class="icon"><i class="fa fa-bars"></i></span></a>
+                    <a href="#"><span class="icon"><i class="fa fa-bars"></i></span></a>
                 </div>
                 <div class="sign-in-btn"><a>
                     <span>Sign in</span>
@@ -29,39 +33,65 @@
                 </div>
            </div>
             
+           
             
         </div>
+        <div class= "clr"></div>
         <div class = "google">
-            <div class="">
+            <div class="absolute">
                 <img src="./img/gg.jpg" alt="Google">
             </div>
         </div>
+
         <div class ="content">
             <form action="#" method="post" id="search">
-                <div class>
-                    <input type="text" value="" name="" id="">
-                </div>
-                <div class>
-                    <a class="btn-search" href=""><span>search</span></a>
-                </div>
-                <div class>
-                    <a class="btn-first-page" href="">
-                        <span>first page</span>
-                    </a>
-                </div>                
-                <div class>
-                    <p>Google have: 
-                        <a href="">Eng</a>
-                        <a href="">Fran</a>
-                        <a href="">???</a>
-                    </p>
+                
+                <div class= "search-content">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search" class="searchbar">
+                        <img src="./img/magnifier.png" alt="search icon" class="icon-search">
+                        <a class="icon-keyboard" href="#"><i class="fa fa-keyboard-o" aria-hidden="true"></i></a>
+                        <a class="icon-mic" href="#"><i class="fa fa-microphone" aria-hidden="true"></i></a>
+                    </div>
+
+                    <div class="btn-content">
+                        <center>
+                            <a class="btn-search" href=""><span>Google Search</span></a>
+                            <a class="btn-search" href=""><span>I'm Feeling Lucky</span></a>
+                        </center>
+                    </div>
                 </div>
             </form>
         </div>
+
+        <div class= "link-lang">
+            <p>Google offered in:
+                <a href="">Tiếng Việt</a>
+                <a href=""> Français</a>
+                <a href="">繁體中文 </a>
+            </p>
+        </div>
+
         <div class="footer">
+            <div class="location">VietNam</div>
+            <div class= "help-content">
+                <div class="help-left help">
+                    <a href="">About</a>
+                    <a href="">Advertising</a>
+                    <a href="">Business</a>
+                    <a href="">How Search works</a>
+                </div>
+
+                <div class="help-right help">
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                    <a href="">Setting</a>
+                </div>
+            </div>
 
         </div>
     </div>
+    
     
     
 </body>

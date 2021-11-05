@@ -6,14 +6,17 @@
 
 .header{
     height: 70px;
-    position: relative;
-    
 }
 .header-content{
-    display: flex;
-    position: absolute;
-    right:0;
-    
+    float: right;
+}
+
+.header-content >div{
+    display: inline-block;
+}
+
+.header-content a{
+    color: black;
 }
 
 .sign-in-btn{
@@ -21,11 +24,13 @@
     width: 110px;
     border: 2px solid #3f85e2;
     border-radius: 5px;
-    margin: 10px 10px 0px 0px;
-    padding: 10px;
+    margin: 12px 10px 0px 0px;
+    padding: 6px;
 }
 
-
+.sign-in-btn:hover{
+    background-color: #2667bb;
+}
 
 .sign-in-btn >a{
     
@@ -41,11 +46,18 @@
 
 .h-icon{
     margin: 10px 10px 0px 0px;
-    padding: 12px 10px 8px 10px;
-    
+    padding: 12px 13px 8px 13px;
+    border: 1px solid black;
+    border-radius: 100px;
+    border: inherit;
 }
 .h-icon > a > span > i{
     font-size: 20px;
+    
+}
+
+.h-icon:hover{
+    background-color: #dddddd;
 }
 
 .h-image{
@@ -53,17 +65,198 @@
     padding: 10px;
 }
 
+.h-image:hover{
+    text-decoration: underline;
+}
+
 .h-gmail{
     margin: 10px 0px 0px 0px;
     padding: 10px;
 }
 
+.h-gmail:hover{
+    text-decoration: underline;
+}
+
 .google{
-    min-height: 200px;
+    min-height: 170px;
+    position: relative;
+}
+
+.google > .absolute{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content{
+    padding: 21px;
+    position: relative;
 }
 
 
 
-.content{
-    max-height: 160px;
+/*----------------- search barr -----------------*/
+      
+.search-box {
+    /* width: 400px;
+    height: 100%;
+    margin: 0 1rem;
+    position: relative;
+    content: " "; */
+    position: absolute;
+    transform: translate(-50%, -100%);
+    
+    left: 50%;
+    
+  }
+  
+  .searchbar {
+    font-size: 18px;
+    width: 500px;
+    height: 40px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    transition: all .1s;
+    transition-delay: .1s;
+    padding: 1px 100px 0px 50px;
+    line-height: 20px;
+  }
+  .searchbar:hover {
+    border-color: rgba(223,225,229,0);
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  }
+
+  .searchbar:focus {
+    outline: none;
+    border-color: rgba(223,225,229,0);
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+  .icon-search {
+    height: 23px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    transition: all .1s;
+    transition-delay: .1s;
+  }
+
+.icon-keyboard{
+    position: absolute;
+    top: 9px;
+    right: 40px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+.icon-mic{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    padding: 0px 5px;
+}
+
+  .button:hover {
+    cursor: pointer;
+  }
+  .searchbar:hover + .button {
+    height: 2.5rem;
+    top: 1.8rem;
+    right: 0;
+  }
+  .searchbar::placeholder {
+    opacity: .3;
+  }
+
+
+/* -------------------------- */
+
+.btn-content{
+    padding-top: 35px ;
+}
+
+.btn-search{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    
+    font-size: 20px;
+    margin: 11px 4px;
+    padding: 8px 18px;
+    line-height: 25px;
+    /* height: 36px;
+    min-width: 54px; */
+    text-align: center;
+    cursor: pointer;
+    /* user-select: none; */
+}
+
+.btn-search:hover{
+    
+    border: 1px solid #c5bfbf;
+    border-radius: 4px;
+    color: #3c4043;
+}
+
+/* ------------------- */
+
+.link-lang{
+    width: 100%;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+    
+}
+
+.link-lang > p > a{
+    color: #1a0dab;
+    text-decoration: none;
+    padding: 0px 4px;
+}
+
+.link-lang > p > a:hover{
+    text-decoration: underline;
+}
+
+/* -------------- */
+.footer{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.location{
+    display: block;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 18px;
+    color: #70757a;
+}
+
+.help-content{
+    padding: 0 20px;
+}
+
+.help-left{
+    float: left;
+}
+
+.help-right{
+    float: right;
+}
+
+.help > a{
+    color: #999da2;
+    display: inline-block;
+    padding: 15px;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.help > a:hover{
+    text-decoration: underline;
 }
