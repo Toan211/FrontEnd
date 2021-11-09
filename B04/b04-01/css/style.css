@@ -8,15 +8,32 @@ body{
     background-color: aqua;
 }
 
-@media only screen and (min-width: 600px) {
+
+.block{
+    text-align: center;
+}
+.nm, .tb{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
     /* For tablets: */
     body{
         background-color: rgb(229, 255, 0);
     }
+
+    .nm{
+        display: block;
+    }
+  
   }
-  @media only screen and (min-width: 768px) {
+  @media screen and (max-width: 576px) {
     /* For desktop: */
     body{
         background-color: rgb(9, 255, 0);
+    }
+    .tb{
+        display: block;
     }
   }
