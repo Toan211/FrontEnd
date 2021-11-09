@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.clr{
+    clear:both;
+}
+
+a{
+    color: rgb(96, 176, 255);
+    
+}
+
+a:hover{
+    color: rgb(0, 128, 255);
+    
+}
+
+.navbar > ul > li {
+    list-style: none;
+}
+
+.line-h-1000{
+    width: 1000px;
+    height: 1px;
+    background-color: black;
+    margin: 0px 0px;
+    
+}
+
+.line-w-350{
+    width: 1px;
+    height: 350px;
+    background-color: black;
+    margin: 0px 0px;
+    display: inline-block;
+}
+
+#wrapper{
+    
+    width: 1000px;
+    height: 600px;
+    margin: 0px auto;
+
+}
+
+.header{
+    height: 150px;
+    
+}
+
+.header > h1{
+    line-height: 400%;
+    text-align: center;
+}
+
+.navbar{
+    height: 45px;
+    
+    border: 1px solid black;
+    border-right-color: white ;
+    border-left-color: white ;
+}
+
+.navbar > ul{
+    line-height: 250%;
+    width: 50%;
+    margin: auto;
+}
+
+.navbar >ul >li{
+    
+    float: left;
+}
+.navbar >ul >li >a{
+    
+    padding: 0 60px;
+}
+
+
+
+/* --------------main------------- */
+
+.main{
+    height: 350px;
+    
+
+}
+
+.left{
+    width: 180px;
+    height: 350px;
+    
+    float: left;
+    border: 1px solid black;
+    border-top-color: white ;
+    border-bottom-color: white ;
+    border-left-color: white ;
+    
+    
+}
+
+.middle{
+    width: 590px;
+    height: 350px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.article > h2{
+    
+    text-align-last: center;
+    text-decoration: underline;
+    padding: 20px 0px;
+
+}
+
+.article > p{
+    padding: 5px 20px;
+}
+
+.right{
+    width: 220px;
+    height: 350px;
+    
+    float: right;
+    border: 1px solid black;
+    border-top-color: white ;
+    border-bottom-color: white ;
+    border-right-color: white ;
+    
+}
+
+.img {
+    
+    height: 120px;
+    
+    padding: 5px 20px 0px 20px;
+  }
+
+.img >p {
+    
+}
+
+.mew{
+    
+    width: 130px;
+    height: 80px;
+    object-fit: contain;
+    
+}
+
+.left ul{
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.right ul{
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+
+.footer > h4{
+    line-height: 200%;
+    text-align: center;
+}
