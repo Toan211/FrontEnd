@@ -93,6 +93,50 @@
     transition: 0.5s;
 }
 
+.dot1{
+    position: absolute;
+    bottom: 10px;
+    left: 48%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.dot2{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.dot3{
+    position: absolute;
+    bottom: 10px;
+    left: 52%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.dot1:hover{
+    opacity: 0.6;
+}
+.dot2:hover{
+    opacity: 0.6;
+}
+.dot3:hover{
+    opacity: 0.6;
+}
+
+.ellipsis ul a{
+    color: white;
+    
+}
+
+.ellipsis .active > a{
+    color: rgb(255, 251, 0);
+   
+}
+
 @media screen and (max-width: 768px) {
     /* For tablets: */
     .block {    
@@ -112,6 +156,18 @@
 
     .btn-sign-in > a{
         font-size: 13px;
+    }
+
+    .dot1{  
+        left: 47%;  
+    }
+    
+    .dot2{  
+        left: 50%;  
+    }
+    
+    .dot3{    
+        left: 53%;
     }
 
     
@@ -138,7 +194,15 @@
             font-size: 26px;
         } 
 
-        .btn-sign-in > a{
+        .dot1{  
+            left: 46%;  
+        }
         
+        .dot2{  
+            left: 50%;  
+        }
+        
+        .dot3{    
+            left: 54%;
         }
   }
