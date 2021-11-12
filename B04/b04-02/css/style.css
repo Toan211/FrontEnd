@@ -60,6 +60,7 @@
 
 .arrow-left{
     font-size:60px;
+    opacity: 0.6;
     color:white;
     position: absolute;
     top:50%;
@@ -68,14 +69,16 @@
 }
 
 .arrow-left:hover{
-    opacity: 0.6;
+    opacity: 1;
     color: rgb(255, 255, 255);
     left: 1%;
     transition: 0.5s;
+    
 }
 
 .arrow-right{
     font-size:60px;
+    opacity: 0.6;
     color:white;
     position: absolute;
     top:50%;
@@ -84,7 +87,7 @@
 }
 
 .arrow-right:hover{
-    opacity: 0.6;
+    opacity: 1;
     color: rgb(255, 255, 255);
     right: 1%;
     transition: 0.5s;
