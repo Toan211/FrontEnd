@@ -1,0 +1,108 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	
+}
+
+.btn {
+	width: 200px;
+	height: 75px;
+	font-weight: bolder;
+	font-size: 18px;
+	background-color: white;
+	border: 3px solid rgb(0, 0, 0);
+	border-top-color: rgb(255, 0, 0);
+	border-right-color: rgb(255, 0, 0);
+	border-bottom-color: rgb(128, 0, 0);
+	border-left-color: rgb(128, 0, 0);
+	border-radius: 30px;
+	position: absolute;
+	transition: all 0.5s;
+}
+
+.btn-A {
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.btn-A:hover {
+	background-color: rgb(255, 79, 79);
+}
+
+.btn-B {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn-B::after {
+	content: "Login";
+    font-size: 18px;
+	transition: all 0.5s;
+}
+.btn-B:hover::after {
+	transition: all 0.5s;
+	font-size: 22px;
+	color: white;
+	content: "Completed!";
+}
+
+.btn-B:hover {
+	background-color: rgb(255, 79, 79);
+	transition: all 0.5s;
+}
+
+/* ------------BtnC------------ */
+
+#wrapper :nth-child(3) {
+	transition: all 0.5s;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	overflow: hidden;
+	position: absolute;
+}
+
+#wrapper :nth-child(3):before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -100%;
+	right: -50%;
+	background: rgb(255, 79, 79);
+	width: 50px;
+	height: 200px;
+	opacity: 20%;
+	transform: rotate(45deg);
+	transition: all 0.5s;
+}
+
+#wrapper :nth-child(3):hover:before {
+	right: 120%;
+	transition: 2s cubic-bezier(0.3, 1, 0.2, 1);
+	-webkit-transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+}
+
+#wrapper :nth-child(3):after {
+	transition: all 0.5s;
+	content: "";
+	display: block;
+	position: absolute;
+	top: -100%;
+	left: -50%;
+	background: rgb(255, 79, 79);
+	width: 50px;
+	height: 200px;
+	opacity: 20%;
+	transform: rotate(-45deg);
+}
+
+#wrapper :nth-child(3):hover:after {
+	left: 120%;
+	transition: 2s cubic-bezier(0.3, 1, 0.2, 1);
+	-webkit-transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+}
