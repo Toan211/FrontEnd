@@ -119,12 +119,15 @@
 
 .dot1:hover{
     opacity: 0.6;
+    transition: 0.5s;
 }
 .dot2:hover{
     opacity: 0.6;
+    transition: 0.5s;
 }
 .dot3:hover{
     opacity: 0.6;
+    transition: 0.5s;
 }
 
 .ellipsis ul a{
