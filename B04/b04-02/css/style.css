@@ -25,7 +25,12 @@
 
 .content >p{
   font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
 }
+
+.content >h1{
+    font-family: 'Merriweather', serif;
+  }
 
 .btn-sign-in{
     margin: 10px 0px;
@@ -38,6 +43,7 @@
     border-radius: 40px;
     color: white; 
     background-color: transparent;
+    font-family: 'Merriweather', serif;
 }
 
 
@@ -101,6 +107,10 @@
         font-size: 28px;
     }
 
+    .btn-sign-in > a{
+        font-size: 13px;
+    }
+
     
   }
   @media screen and (max-width: 576px) {
@@ -122,6 +132,10 @@
         }
 
         .content >h1{
-            font-size: 28px;
+            font-size: 26px;
         } 
+
+        .btn-sign-in > a{
+        
+        }
   }
