@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.block{
+    height: 500px;
+    padding: 0px 100px;
+    position: relative;
+    color: white;
+    background-image: url(../img/starry-sky1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    margin: 0px 30px ;
+    width: 75%;
+}
+
+.content >p{
+  font-size: 18px;
+}
+
+.btn-sign-in{
+    margin: 10px 0px;
+}
+
+.btn-sign-in > a{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 40px;
+    color: white; 
+    background-color: transparent;
+}
+
+
+
+.btn-sign-in >a:hover{
+    background-color: #4cc9f0;
+    -webkit-box-shadow: 4px 0px 85px 7px rgb(76 201 240);
+    -moz-box-shadow: 4px 0px 85px 7px rgb(76 201 240);
+    box-shadow: 4px 0px 85px 7px rgb(76 201 240);
+    transition: 0.5s;
+    
+}
+
+
+.arrow-left{
+    font-size:60px;
+    color:white;
+    position: absolute;
+    top:50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.arrow-left:hover{
+    opacity: 0.6;
+    color: rgb(255, 255, 255);
+    left: 1%;
+    transition: 0.5s;
+}
+
+.arrow-right{
+    font-size:60px;
+    color:white;
+    position: absolute;
+    top:50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+.arrow-right:hover{
+    opacity: 0.6;
+    color: rgb(255, 255, 255);
+    right: 1%;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    /* For tablets: */
+    .block {    
+        padding: 0px 80px;
+    }
+    .content{
+        margin: 0px 10px;
+        width: 75%;
+    }
+    .content >p{
+        display: none;
+      }
+
+    .content >h1{
+        font-size: 28px;
+    }
+
+    
+  }
+  @media screen and (max-width: 576px) {
+    /* For phone: */
+        .arrow-left{
+            display: none;
+        }
+        .arrow-right{
+            display: none;
+        }
+        
+        .block {      
+            padding: 0px 65px;    
+        }
+        
+        .content{
+            margin: 0px 0px;
+            width: 80%;
+        }
+
+        .content >h1{
+            font-size: 28px;
+        } 
+  }
