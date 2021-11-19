@@ -61,6 +61,10 @@
 	border: 1px solid blueviolet;
 }
 
+.icon:hover{
+	background-color: rgb(111, 62, 156);
+}
+
 .content{
 	text-align: center;
 	
