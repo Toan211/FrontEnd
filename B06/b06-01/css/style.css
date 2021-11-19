@@ -50,11 +50,8 @@
 	border: 1px solid blueviolet;
 }
 
-.btn-header{
-	margin: 5px;
-	padding: 8px 15px;
-	border-radius: 30px;
-	border: 1px solid blueviolet;
+.btn-header:hover{
+	background-color: rgb(111, 62, 156);
 }
 
 .icon{
