@@ -5,23 +5,23 @@
 }
 
 body{
-	background-color: deeppink;
+	background-color: #bb7494;
 }
 #wrapper{
 
 }
 
 .box{
-	height: 400px;
-	width: 800px;
+	height: 550px;
+	width: 1100px;
 	border: 1px solid black;
 	margin: 20px auto;
 	background-color: white;
 }
 
 .header{
-	background-color: blueviolet;
-	height: 80px;
+	background-image: linear-gradient(to right, #8b4989 , #81749f);;
+	height: 15%;
 	display: flex;
 	font-size: 19px;
 	color: white;
@@ -32,8 +32,6 @@ body{
 
 .header-left{
 	display: flex;
-	
-
 }
 
 .header-right{
@@ -49,28 +47,35 @@ body{
 }
 
 .btn-header{
-	margin: 5px;
 	padding: 8px 15px;
 	border-radius: 30px;
-	border: 1px solid blueviolet;
+	border: 1px solid transparent;
+	transition: 0.25s all;
 }
 
 .btn-header:hover{
-	background-color: rgb(111, 62, 156);
+	background-color: #663d69;
+	
 }
 
 .icon{
-	margin: 5px;
 	padding: 8px 15px;
 	border-radius: 30px;
-	border: 1px solid blueviolet;
+	border: 1px solid transparent;
+	transition: 0.25s all;
 }
 
 .icon:hover{
-	background-color: rgb(111, 62, 156);
+	background-color: #663d69;
 }
 
 .content{
-	text-align: center;
+	display: flex;
+	height: 85%;
+	align-items: center;
+	justify-content: center;
+}
+
+.text{
 	
 }
