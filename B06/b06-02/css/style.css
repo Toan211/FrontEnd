@@ -2,7 +2,6 @@
 	margin: 0px;
 	padding: 0px;
 	
-	
 }
 
 body{
@@ -14,17 +13,14 @@ body{
 
 .box{
 	height: 550px;
-	width: 1000px;
-	border: 1px  #a26881;
-	border-radius: 10px;
+	width: 1100px;
+	border: 1px solid black;
 	margin: 20px auto;
 	background-color: white;
-	box-shadow: 5px 5px 5px #a66b87;
 }
 
 .header{
 	background-image: linear-gradient(to right, #8b4989 , #81749f);;
-	border-radius: 9px 9px 0 0;
 	height: 15%;
 	display: flex;
 	font-size: 19px;
