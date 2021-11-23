@@ -2,57 +2,50 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	
 }
 
-body{
+body {
 	min-height: 100%;
-	
-	background: #64CDCD;
+
+	background: #64cdcd;
 	background-size: cover;
 	/* add min height, full page, but still break if there is scroll horizontal*/
 	/* background: linear-gradient(to bottom right, #64CDCD, #2E1364); */
-	
-	/* u can use fix if not add min height, but it will break if there is scroll verticle*/ 
-	 background: linear-gradient(to bottom right, #64CDCD, #2E1364) fixed;  
+
+	/* u can use fix if not add min height, but it will break if there is scroll verticle*/
+	background: linear-gradient(to bottom right, #64cdcd, #2e1364) fixed;
 }
 
-li{
+li {
 	list-style: none;
 }
 
-#wrapper{
-
-}
-
-.box-img{
+.box-img {
 	height: 600px;
 	width: 1000px;
-	border: 1px  #a26881;
+	border: 1px #a26881;
 	margin: 30px auto 10px auto;
-	
+
 	background-image: url(../img/OIP.jpg);
 	border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
-.btn-slide{
+.btn-slide {
 	height: 100px;
 	width: 1000px;
-	border: 1px  #a26881;
+	border: 1px #a26881;
 	margin: 10px auto;
 	background-color: rgba(0, 0, 0, 0.219);
-	
 }
 
-.btn-slide > ul{
+.btn-slide > ul {
 	display: flex;
 	align-items: center;
-	
 }
 
-.btn-slide > ul li{
+.btn-slide > ul li {
 	height: 100px;
 	flex-basis: 20%;
 	color: white;
@@ -60,21 +53,21 @@ li{
 	text-align: center;
 	vertical-align: middle;
 	display: flex;
-    align-items: center;
+	align-items: center;
 	justify-content: center;
 	padding: 5px;
-
 }
 
-.btn-slide > ul li > a > i{
+.btn-slide > ul li > a > i {
 	color: white;
 	font-size: 20px;
 }
-.btn-slide > ul li:nth-child(1), .btn-slide > ul li:nth-child(6){
-	  flex-basis: 10%;	  
+.btn-slide > ul li:nth-child(1),
+.btn-slide > ul li:nth-child(6) {
+	flex-basis: 10%;
 }
 
-.btn-slide > ul li:hover{
+.btn-slide > ul li:hover {
 	background-color: rgba(0, 0, 0, 0.219);
 	transition: 0.2s all;
 }
