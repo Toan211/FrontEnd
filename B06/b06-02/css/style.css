@@ -1,81 +1,80 @@
 * {
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 	
 }
 
 body{
-	background-color: #bb7494;
+	min-height: 100%;
+	
+	background: #64CDCD;
+	background-size: cover;
+	/* add min height, full page, but still break if there is scroll horizontal*/
+	/* background: linear-gradient(to bottom right, #64CDCD, #2E1364); */
+	
+	/* u can use fix if not add min height, but it will break if there is scroll verticle*/ 
+	 background: linear-gradient(to bottom right, #64CDCD, #2E1364) fixed;  
 }
+
+li{
+	list-style: none;
+}
+
 #wrapper{
 
 }
 
-.box{
-	height: 550px;
-	width: 1100px;
-	border: 1px solid black;
-	margin: 20px auto;
-	background-color: white;
+.box-img{
+	height: 600px;
+	width: 1000px;
+	border: 1px  #a26881;
+	margin: 30px auto 10px auto;
+	
+	background-image: url(../img/OIP.jpg);
+	border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-.header{
-	background-image: linear-gradient(to right, #8b4989 , #81749f);;
-	height: 15%;
+.btn-slide{
+	height: 100px;
+	width: 1000px;
+	border: 1px  #a26881;
+	margin: 10px auto;
+	background-color: rgba(0, 0, 0, 0.219);
+	
+}
+
+.btn-slide > ul{
 	display: flex;
-	font-size: 19px;
+	align-items: center;
+	
+}
+
+.btn-slide > ul li{
+	height: 100px;
+	flex-basis: 20%;
 	color: white;
-	font-weight: bold;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.header-left{
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
 	display: flex;
-}
-
-.header-right{
-	display: flex;
-
-}
-
-.btn-header{
-	margin: 5px;
-	padding: 8px 15px;
-	border-radius: 30px;
-	border: 1px solid black;
-}
-
-.btn-header{
-	padding: 8px 15px;
-	border-radius: 30px;
-	border: 1px solid transparent;
-	transition: 0.25s all;
-}
-
-.btn-header:hover{
-	background-color: #663d69;
-	
-}
-
-.icon{
-	padding: 8px 15px;
-	border-radius: 30px;
-	border: 1px solid transparent;
-	transition: 0.25s all;
-}
-
-.icon:hover{
-	background-color: #663d69;
-}
-
-.content{
-	display: flex;
-	height: 85%;
-	align-items: center;
+    align-items: center;
 	justify-content: center;
+	padding: 5px;
+
 }
 
-.text{
-	
+.btn-slide > ul li > a > i{
+	color: white;
+	font-size: 20px;
+}
+.btn-slide > ul li:nth-child(1), .btn-slide > ul li:nth-child(6){
+	  flex-basis: 10%;	  
+}
+
+.btn-slide > ul li:hover{
+	background-color: rgba(0, 0, 0, 0.219);
+	transition: 0.2s all;
 }
