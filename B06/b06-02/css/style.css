@@ -68,6 +68,7 @@ li {
 }
 
 .btn-slide > ul li:hover {
+	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0.219);
 	transition: 0.2s all;
 }
