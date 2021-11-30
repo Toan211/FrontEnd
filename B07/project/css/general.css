@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: aqua;
+    
 }
 
 
@@ -69,18 +69,45 @@ a{
 	margin-bottom: 60px;
 }
 
+.margin-bot-90{
+	margin-bottom: 90px;
+}
+
 .margin-bot-15{
 	margin-bottom: 15px;
 }
 
-h2{
-
+.roboto-light{
+	font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+	font-size: 2.0rem;
 }
 
-h1{
-
+.roboto-light-italic{
+	font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+	font-size: 2.0rem;
+	font-style: italic;
+	color: #a7a7a7;
 }
 
-h3{
-	
+.roboto-regular{
+	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+	font-size: 2.0rem;
+}
+
+.montserrat-regular{
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.9rem; /*14pt*/
+}
+
+.montserrat-bold{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.kaushan{
+	font-family: 'Kaushan Script', cursive;
 }

@@ -320,23 +320,100 @@ w = 1920
 .feature-banner{
 	height: 862px;
 	width: 100%;
-	background-image: url(../img/hero.png);
+	background-image: url(../img/Layer45.png);
 	background-color: #b6b6b6;
 	opacity: 0.2;
 	background-repeat: no-repeat;
-	
-  	
 	background-size: 100% 100%;
 	position: absolute;
 	z-index: -1;
 }
 
-.service2{
-
+.feature-image{
+	position: absolute;
+	bottom: 4%;
+    left: 47%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
 }
 
-.quote{
+.feature-image :nth-child(2){
+	position: absolute;
+	position: absolute;
+    left: 72%;
+    top: 36%;
+}
 
+/* ---------------------service2----------------- */
+
+.service2{
+	height: 900px;
+	background-color: white;
+	text-align: center;
+}
+
+
+.service2-box{
+	display: flex;
+	text-align: left;
+}
+
+.service2-box >img{
+	width: 50%;
+}
+
+.service2-box > ul{
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.service2-box > ul li{
+	border: 1px solid black;	
+}
+
+.service2-box > ul li > p{
+	padding: 20px 50px 25px 20px;
+}
+
+.service2-box-head{
+	display: flex;
+    align-items: center;
+	padding: 10px;
+	
+}
+
+.service2-box-head > a{
+	padding-right: 15px;
+}
+
+/* ------------------quote------------------- */
+
+.quote{
+	height: 290px;
+	background-color: #f8f8f8;
+	display: flex;
+}
+
+.quote-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.quote-content-arr{
+	font-size: 2.5rem;
+	color: #cccccc;
+}
+
+.quote-content >img{
+	border: 3px solid #95e1d3;
+	padding: 40px;
+}
+
+.quote-content-inner{
+	width: 70%;
 }
 
 .our-team{
