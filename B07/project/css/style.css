@@ -200,7 +200,7 @@ w = 1920
 	justify-content: space-between;
 }
 
-.about-us-image-contain > ul li img{
+.about-us-image-contain > ul li > img{
 	width: 100%;
 }
 
@@ -416,6 +416,53 @@ w = 1920
 	width: 70%;
 }
 
+/* --------------------our team---------------- */
+
 .our-team{
+	height: 1050px;
+	background-color: white;
+	text-align: center;
+}
+
+.our-team-image-contain{
+	margin-top: 100px;
+	margin-bottom: 110px; 
+	
+}
+
+.our-team-image-contain > ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-us-image-contain > ul li > img{
+	width: 100%;
+}
+
+.our-team-image-contain > ul li{
+	display: flex;
+	flex-direction: column;
+}
+
+.our-team-image-contain > ul li :nth-child(2){
+	color: black;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+/* ----------------logo----------------- */
+
+.logo{
+	height: 250px;
+	background-color: #f8f8f8;
+	display: flex;
+}
+
+/* -----------------work--------------------- */
+
+.work{
+	height: 1190px;
+	background-color: white;
+	text-align: center;
 
 }
