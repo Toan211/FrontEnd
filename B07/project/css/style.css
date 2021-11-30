@@ -3,73 +3,70 @@ h = 1080
 w = 1920 
 */
 
-#wrapper{
-	
-}
-
 /* --------------header--------------- */
 
-.header{
+.header {
 	height: 1000px;
 	display: flex;
 	flex-direction: column;
 }
 
-.header-banner{
+.header-banner {
 	height: 1000px;
 	width: 100%;
-	background-image: linear-gradient(to bottom, #f48c829f, #fce38a),url(../img/hero.png);
+	background-image: linear-gradient(to bottom, #f48c829f, #fce38a),
+		url(../img/hero.png);
 	background-repeat: no-repeat;
 	background-position: center; /* Center the image */
-  	background-size: contain; /* Resize the background image to cover the entire container */
+	background-size: contain; /* Resize the background image to cover the entire container */
 	background-size: 100% 100%;
 	position: absolute;
 	z-index: -1;
 }
 
-.header-navbar{
+.header-navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 	color: white;
 }
 
-.header-navbar-left{
-	font-size: 4.0rem;
+.header-navbar-left {
+	font-size: 4rem;
 	font-weight: bold;
 	margin-top: 20px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-weight: bolder;
 }
 
-.header-navbar-right > ul{
+.header-navbar-right > ul {
 	display: flex;
 }
 
-.header-navbar-right > ul li{
-	 margin-right: 30px;
-	 padding-bottom: 10px;
-	 font-size: 1.9rem;
-	 text-transform: uppercase;
-	 font-family: 'Montserrat', sans-serif;
+.header-navbar-right > ul li {
+	margin-right: 30px;
+	padding-bottom: 10px;
+	font-size: 1.9rem;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
 }
 
-.header-navbar-right > ul :nth-child(7){
+.header-navbar-right > ul :nth-child(7) {
 	margin-right: 0;
 }
 
-.header-navbar-right > ul :nth-child(6) > a > i, .header-navbar-right > ul :nth-child(7) > a > i{
-	color: white; 
+.header-navbar-right > ul :nth-child(6) > a > i,
+.header-navbar-right > ul :nth-child(7) > a > i {
+	color: white;
 	font-size: 1.9rem;
 }
 
-
-.header-navbar-active{
+.header-navbar-active {
 	color: #fce38a;
 	border-bottom: 3px solid;
 }
 
-.header-content{
+.header-content {
 	text-align: center;
 	color: white;
 	display: flex;
@@ -79,245 +76,233 @@ w = 1920
 	height: 85%;
 }
 
-.header-content-sub{
+.header-content-sub {
 	font-size: 9.6rem;
 	font-style: italic;
-	font-family: 'Kaushan Script', cursive;
+	font-family: "Kaushan Script", cursive;
 	color: white;
 }
 
-
-.header-content-main a{
+.header-content-main a {
 	font-size: 20rem;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;	
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
 	color: white;
 }
 
-.header-content-main :last-child{
+.header-content-main :last-child {
 	display: block;
 	margin-top: -50px;
 	margin-bottom: 60px;
 }
 
-.header-content-btn{
+.header-content-btn {
 	margin-top: 60px;
 }
 
-.header-content-btn > a{
+.header-content-btn > a {
 	color: white;
 	text-transform: uppercase;
 	border: 3px solid white;
 	font-size: 1.5rem;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	padding: 12px 30px;
-	
 }
 
-.header-banner-footer{
+.header-banner-footer {
 	height: 6%;
-    display: flex;
-    align-items: flex-end;
+	display: flex;
+	align-items: flex-end;
 }
 
-.header-banner-footer > ul{
+.header-banner-footer > ul {
 	display: flex;
 	height: 10%;
 	justify-content: center;
 	align-items: flex-end;
 }
 
-
-
-.header-banner-footer > ul li{
-	 margin-left: 30px; 
-	width: 280px; 
+.header-banner-footer > ul li {
+	margin-left: 30px;
+	width: 280px;
 	color: white;
 	text-transform: uppercase;
-	
 }
 
-.header-banner-footer > ul:first-child{
+.header-banner-footer > ul:first-child {
 	margin-left: 0;
 }
 
 .header-banner-footer > ul li :nth-child(2) {
-	font-size: 2.0rem; 
-	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
 }
 
 .header-banner-footer > ul li :nth-child(3) {
 	font-size: 1.5rem;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 /* ---------------about-us: what we do------------------- */
 
-.about-us{
+.about-us {
 	height: 750px;
 	background-color: white;
 	text-align: center;
 }
 
-.about-us-content{
+.about-us-content {
 	padding-top: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.about-us-content :nth-child(1){
+.about-us-content :nth-child(1) {
 	font-size: 3.2rem;
-	font-family: 'Kaushan Script', cursive;
+	font-family: "Kaushan Script", cursive;
 }
 
-.about-us-content :nth-child(2){
+.about-us-content :nth-child(2) {
 	font-size: 4rem;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-.about-us-content :nth-child(4){
-	font-size: 2.0rem;
-	font-family: 'Roboto', sans-serif;
+.about-us-content :nth-child(4) {
+	font-size: 2rem;
+	font-family: "Roboto", sans-serif;
 	color: #b6b6b6;
 	max-width: 960px;
 }
 
-.about-us-image-contain{
+.about-us-image-contain {
 	margin-top: 100px;
-	margin-bottom: 110px; 
-	
+	margin-bottom: 110px;
 }
 
-.about-us-image-contain > ul{
+.about-us-image-contain > ul {
 	display: flex;
 	justify-content: space-between;
 }
 
-.about-us-image-contain > ul li > img{
+.about-us-image-contain > ul li > img {
 	width: 100%;
 }
 
-
 /* ---------------fact------------------- */
 
-.fact{
+.fact {
 	height: 270px;
 	background-color: #95e1d3;
 }
 
-.fact-content{
+.fact-content {
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
 	height: 100%;
-	
 }
 
-
-.fact-content div{
-	
+.fact-content div {
 	border-left: 1px solid #b5eae0;
 	width: 20%;
 	color: white;
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.fact-content div:last-child{
+.fact-content div:last-child {
 	border-right: 1px solid #b5eae0;
 }
 
-.fact-content div :nth-child(1){
-	font-family: 'Montserrat', sans-serif;
+.fact-content div :nth-child(1) {
+	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
 	font-size: 9.6rem;
 }
 
-.fact-content div :nth-child(2){
-	font-family: 'Montserrat', sans-serif;
+.fact-content div :nth-child(2) {
+	font-family: "Montserrat", sans-serif;
 	font-size: 1.9rem;
 	text-transform: uppercase;
 }
 
 /* --------------service------------- */
-.service{
+.service {
 	height: 650px;
 	background-color: white;
 	text-align: center;
 }
 
-.service-content{
+.service-content {
 	padding-top: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.service-box{
 	display: flex;
-	height:50%;
+	flex-direction: column;
+	align-items: center;
 }
 
-.service-box ul{
+.service-box {
+	display: flex;
+	height: 50%;
+}
+
+.service-box ul {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.service-box ul li{
+.service-box ul li {
 	display: flex;
-    width: 33.33%;
+	width: 33.33%;
 	border-bottom: 1px solid black;
 	padding: 45px 0 50px 30px;
 }
 
-.service-box ul :nth-child(4), 
+.service-box ul :nth-child(4),
 .service-box ul :nth-child(5),
- .service-box ul :nth-child(6){
+.service-box ul :nth-child(6) {
 	border-bottom: none;
 }
 
-.service-box ul li a{
+.service-box ul li a {
 	padding-right: 28px;
 }
 
-.service-box ul li a img{
+.service-box ul li a img {
 	width: 45px;
 }
 
-.service-box ul li div{
+.service-box ul li div {
 	text-align: left;
 }
 
-.service-box ul li p:nth-child(1){
-	font-family: 'Montserrat', sans-serif;
+.service-box ul li p:nth-child(1) {
+	font-family: "Montserrat", sans-serif;
 	font-size: 1.9rem;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
 
-.service-box ul li p:nth-child(2){
+.service-box ul li p:nth-child(2) {
 	font-size: 2rem;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	color: #b6b6b6;
 }
 
-
-
 /* -------------feature-------------- */
 
-.feature{
+.feature {
 	height: 900px;
 }
 
-.feature-banner{
+.feature-banner {
 	height: 862px;
 	width: 100%;
 	background-image: url(../img/Layer45.png);
@@ -329,122 +314,119 @@ w = 1920
 	z-index: -1;
 }
 
-.feature-image{
+.feature-image {
 	position: absolute;
 	bottom: 4%;
-    left: 47%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
+	left: 47%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
-.feature-image :nth-child(2){
+.feature-image :nth-child(2) {
 	position: absolute;
 	position: absolute;
-    left: 72%;
-    top: 36%;
+	left: 72%;
+	top: 36%;
 }
 
 /* ---------------------service2----------------- */
 
-.service2{
+.service2 {
 	height: 900px;
 	background-color: white;
 	text-align: center;
 }
 
-
-.service2-box{
+.service2-box {
 	display: flex;
 	text-align: left;
 }
 
-.service2-box >img{
+.service2-box > img {
 	width: 50%;
 }
 
-.service2-box > ul{
+.service2-box > ul {
 	margin-left: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-.service2-box > ul li{
-	border: 1px solid black;	
+.service2-box > ul li {
+	border: 1px solid black;
 }
 
-.service2-box > ul li > p{
+.service2-box > ul li > p {
 	padding: 20px 50px 25px 20px;
 }
 
-.service2-box-head{
+.service2-box-head {
 	display: flex;
-    align-items: center;
+	align-items: center;
 	padding: 10px;
-	
 }
 
-.service2-box-head > a{
+.service2-box-head > a {
 	padding-right: 15px;
 }
 
 /* ------------------quote------------------- */
 
-.quote{
+.quote {
 	height: 290px;
 	background-color: #f8f8f8;
 	display: flex;
 }
 
-.quote-content{
+.quote-content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.quote-content-arr{
+.quote-content-arr {
 	font-size: 2.5rem;
 	color: #cccccc;
 }
 
-.quote-content >img{
+.quote-content > img {
 	border: 3px solid #95e1d3;
 	padding: 40px;
 }
 
-.quote-content-inner{
+.quote-content-inner {
 	width: 70%;
 }
 
 /* --------------------our team---------------- */
 
-.our-team{
+.our-team {
 	height: 1050px;
 	background-color: white;
 	text-align: center;
 }
 
-.our-team-image-contain{
+.our-team-image-contain {
 	margin-top: 100px;
-	margin-bottom: 110px; 
-	
+	margin-bottom: 110px;
 }
 
-.our-team-image-contain > ul{
+.our-team-image-contain > ul {
 	display: flex;
 	justify-content: space-between;
 }
 
-.about-us-image-contain > ul li > img{
+.about-us-image-contain > ul li > img {
 	width: 100%;
 }
 
-.our-team-image-contain > ul li{
+.our-team-image-contain > ul li {
 	display: flex;
 	flex-direction: column;
 }
 
-.our-team-image-contain > ul li :nth-child(2){
+.our-team-image-contain > ul li :nth-child(2) {
 	color: black;
 	margin-top: 30px;
 	margin-bottom: 15px;
@@ -452,7 +434,7 @@ w = 1920
 
 /* ----------------logo----------------- */
 
-.logo{
+.logo {
 	height: 250px;
 	background-color: #f8f8f8;
 	display: flex;
@@ -460,9 +442,19 @@ w = 1920
 
 /* -----------------work--------------------- */
 
-.work{
+.work {
 	height: 1190px;
 	background-color: white;
 	text-align: center;
+}
 
+.work-image-contain {
+	height: 780px;
+	display: flex;
+}
+
+.work-image-contain div:nth-child(1) {
+	display: flex;
+	width: 75%;
+	flex-wrap: wrap;
 }
