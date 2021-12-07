@@ -451,6 +451,11 @@ w = 1920
 .work-image-contain {
 	height: 780px;
 	display: flex;
+	width: 100%;
+}
+
+.work-image-contain-box {
+	width: 25%;
 }
 
 .work-image-contain div:nth-child(1) {
