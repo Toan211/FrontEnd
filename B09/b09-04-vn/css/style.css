@@ -3,3 +3,10 @@
     padding: 0px;
 }
 
+mark{
+    display: inline;
+}
+
+.highlight{
+    background-color: yellow;
+}
