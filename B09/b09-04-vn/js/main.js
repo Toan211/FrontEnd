@@ -9,4 +9,4 @@ deal = "Frontend";
 
 replaceText = text.replace(regex,'<mark class="highlight">' + deal +'</mark>')
 
-document.getElementById("changeBox").innerHTML = replaceText;
+document.getElementById("box").innerHTML = replaceText;
