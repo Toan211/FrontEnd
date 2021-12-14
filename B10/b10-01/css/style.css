@@ -1,0 +1,16 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.box{
+	margin: 200px auto;
+	background-color: aqua;
+	height: 200px;
+	width: 800px;
+}
+
+#quote{
+	text-align: center;
+}
