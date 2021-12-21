@@ -48,8 +48,8 @@ function update(){
 
 
 
-btn_submit.addEventListener("click", () => {
-    
+btn_submit.addEventListener("click", (e) => {
+    e.preventDefault();
     if(input_name.value == "")
     {
         alert('please dont leave task field empty :<');
@@ -64,25 +64,26 @@ btn_submit.addEventListener("click", () => {
     
 });
 
-btn_cancel.addEventListener("click", () => {
+btn_cancel.addEventListener("click", (e) => {
+    e.preventDefault();
     input_name.value = "";
     input_level.value = 0;
 });
 
 
-btn_add.addEventListener("click", () => {
-
+btn_add.addEventListener("click", (e) => {
+    e.preventDefault();
     let element = document.querySelector('#area-form');
     // jquery.hasClass('d-none')    
     if(element.classList.contains('d-none')){
         element.classList.remove("d-none");
         btn_add.classList.remove("btn-danger");
         btn_add.classList.add("btn-info");
-        btn_add.innerHTML = "add task";
+        btn_add.innerHTML = "Close";
     }else{
         element.classList.add("d-none");
         btn_add.classList.remove("btn-info");
         btn_add.classList.add("btn-danger");
-        btn_add.innerHTML = "close";
+        btn_add.innerHTML = "add task";
     }
 });
