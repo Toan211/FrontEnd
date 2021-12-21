@@ -76,7 +76,13 @@ btn_add.addEventListener("click", () => {
     // jquery.hasClass('d-none')    
     if(element.classList.contains('d-none')){
         element.classList.remove("d-none");
+        btn_add.classList.remove("btn-danger");
+        btn_add.classList.add("btn-info");
+        btn_add.innerHTML = "add task";
     }else{
         element.classList.add("d-none");
+        btn_add.classList.remove("btn-info");
+        btn_add.classList.add("btn-danger");
+        btn_add.innerHTML = "close";
     }
 });
