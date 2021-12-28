@@ -33,10 +33,10 @@ function danger(ele) {
  }
 
 const getList = (data) => {
-    console.log("get list");
+    
     let str = '';
     data.forEach((element,index) => {
-        console.log(element);
+        
         str += 
         `
         <tr>
@@ -50,7 +50,7 @@ const getList = (data) => {
         </tr>
         `
     });
-    itemList.innerHTML = str;
+    itemList.html(str);
     console.log("list = ", data);
 }
 
@@ -77,7 +77,8 @@ function deleteItem(id) {
     console.log("delete");
     let data = getLocalStorage(LOCAL); 
     
-    data.splice(id, 1);
+    data = data.filter(data => data.id != id);
+    
     setLocalStorage(LOCAL,data);
     getList(data);
 };

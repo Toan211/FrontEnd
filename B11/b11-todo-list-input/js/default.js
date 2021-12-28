@@ -1,14 +1,14 @@
 const LOCAL = "task_list";
-const TODOLIST = [];
+
 
 const btn_add = $("#addTask");
 const btn_submit = $("#itemSubmit");
 const btn_cancel = $("#itemCancel");
-// const btn_edit = $("#itemEdit");
-// const btn_delete = $("#itemDelete");
+const btn_sort = $("dropdownMenu2");
 
 const input_id = $("#input-id");
 const input_name = $("#input-name");
 const input_level = $("#input-level");
+const sort_name = $("#sort-name");
 
-const itemList = document.querySelector("#area-list-task");
+const itemList = $("#area-list-task");
