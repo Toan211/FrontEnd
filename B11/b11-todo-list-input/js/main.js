@@ -66,11 +66,6 @@ btn_add.click( (e) => {
     resetForm();
 });
 
-btn_sort.click((e)=>{
-    e.preventDefault();
-    console.log("click");
-})
-
 $(document).ready(function () {
     let data = getLocalStorage(LOCAL);
     getList(data);  

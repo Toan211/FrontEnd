@@ -4,7 +4,7 @@ const LOCAL = "task_list";
 const btn_add = $("#addTask");
 const btn_submit = $("#itemSubmit");
 const btn_cancel = $("#itemCancel");
-const btn_sort = $("dropdownMenu2");
+
 
 const input_id = $("#input-id");
 const input_name = $("#input-name");

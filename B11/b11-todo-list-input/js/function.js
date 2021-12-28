@@ -93,4 +93,50 @@ function editItem(id) {
    
    input_name.val(data[index].name) ;
    input_level.val(data[index].level);
-   }   
+}   
+
+function onSort(name){
+    console.log("click");
+    let data = getLocalStorage(LOCAL);
+    if (name == "name_asc")
+    {
+        sort_name.html("NAME - ASC")
+        
+        data.sort((a, b) => {
+            let fa = a.name.toLowerCase(),
+                fb = b.name.toLowerCase();
+            if (fa < fb) {
+                return -1;
+            }
+            if (fa > fb) {
+                return 1;
+            }
+            return 0;
+        });
+        
+    } else if (name == "name_desc"){
+        sort_name.html("NAME - DESC")
+        data.sort((a, b) => {
+            let fa = a.name.toLowerCase(),
+                fb = b.name.toLowerCase();
+            if (fa < fb) {
+                return 1;
+            }
+            if (fa > fb) {
+                return -1;
+            }
+            return 0;
+        });
+    } else if (name == "lvl_asc"){
+        sort_name.html("LEVEL - ASC")
+        data.sort((a, b) => {
+            return a.level - b.level;
+        });
+        
+    }else if (name == "lvl_desc"){
+        sort_name.html("LEVEL - DESC")
+        data.sort((a, b) => b.level - a.level);
+    }
+    setLocalStorage(LOCAL, data);
+    getList(data);
+}
