@@ -1,89 +1,75 @@
 
 
-getLocalStorage(LOCAL);
+getLocalStorage(LOCAL);  
 
-function get_update(){
-    TODOLIST.push([input_name.value, input_level.value]);
-    update();
-}
-
-function danger(ele) { 
-    let danger;
-    let dangerClass;
-    if (ele == 0)
-    {
-        dangerClass = "bg-dark";
-        danger = "Small";
-    } else if (ele == 1)
-    {
-        dangerClass = "bg-info";
-        danger = "Medium";
-    } else if (ele == 2)
-    {
-        dangerClass = "bg-danger";
-        danger = "High";
-    } 
-    return [dangerClass,danger]
- }
-
-function update(){
-    
-    str ='';
-    TODOLIST.forEach((element,index) => {
-        str = str +
-        `
-        <tr>
-            <td>${index+1}</th>
-            <td>${element[0]}</td>
-            <td><span class="badge ${danger(element[1])[0]}">${danger(element[1])[1]}</span></td>
-            <td>
-                <button class="btn btn-warning">Edit</button>
-                <button class="btn btn-danger">Delete</button>
-            </td>
-        </tr>
-        `
-    });
-    itemList.innerHTML = str;
-}
-
-
-
-btn_submit.addEventListener("click", (e) => {
+btn_submit.click( (e) => { 
     e.preventDefault();
-    if(input_name.value == "")
+    let data = getLocalStorage(LOCAL);
+    if(input_id.val() == "")
     {
-        alert('please dont leave task field empty :<');
-        
-    } else{
-        get_update(); 
-        setLocalStorage(LOCAL, TODOLIST);
-    
-        input_name.value = "";
-        input_level.value = 0;
+        if(input_name.val() == "")
+        {
+            alert('please dont leave task field empty :<');
+            
+        } else{
+            let obj = {
+                id: createRandomID(),
+                name : input_name.val(),
+                level : input_level.val()
+            }
+            data.push(obj);
+            setLocalStorage(LOCAL, data);
+            getList(data); 
+        } 
+    }else {
+        id = input_id.val();
+        console.log(id);
+        let index = data.map(object => object.id).indexOf(id);
+        data[index].name = input_name.val();
+        data[index].level = input_level.val();
+        setLocalStorage(LOCAL, data);
+        getList(data); 
     }
     
+    resetForm();
 });
 
-btn_cancel.addEventListener("click", (e) => {
+btn_cancel.click( (e) => { 
     e.preventDefault();
-    input_name.value = "";
-    input_level.value = 0;
+    let element = $('#area-form');
+    if(!element.hasClass('d-none')){
+        element.addClass("d-none");
+        btn_add.removeClass("btn-info");
+        btn_add.addClass("btn-danger");
+        btn_add.html("add task");
+    }
+    resetForm();
 });
 
 
-btn_add.addEventListener("click", (e) => {
+btn_add.click( (e) => { 
     e.preventDefault();
-    let element = document.querySelector('#area-form');
+    let element = $('#area-form');
     // jquery.hasClass('d-none')    
-    if(element.classList.contains('d-none')){
-        element.classList.remove("d-none");
-        btn_add.classList.remove("btn-danger");
-        btn_add.classList.add("btn-info");
-        btn_add.innerHTML = "Close";
+    
+    if(element.hasClass('d-none')){
+        element.removeClass("d-none");
+        btn_add.removeClass("btn-danger");
+        btn_add.addClass("btn-info");
+        btn_add.html("close");
     }else{
-        element.classList.add("d-none");
-        btn_add.classList.remove("btn-info");
-        btn_add.classList.add("btn-danger");
-        btn_add.innerHTML = "add task";
+        element.addClass("d-none");
+        btn_add.removeClass("btn-info");
+        btn_add.addClass("btn-danger");
+        btn_add.html("add task");
     }
+    resetForm();
+});
+
+
+$(document).ready(function () {
+    let data = getLocalStorage(LOCAL);
+    getList(data);
+
+    
 });

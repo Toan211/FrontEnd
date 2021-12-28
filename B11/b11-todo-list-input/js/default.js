@@ -1,12 +1,14 @@
-const btn_add = document.querySelector('#addTask');
-const btn_submit = document.querySelector('#itemSubmit');
-const btn_cancel = document.querySelector('#itemCancel');
+const LOCAL = "task_list";
+const TODOLIST = [];
 
-const input_name = document.querySelector('#input-name');
-const input_level = document.querySelector('#input-level');
+const btn_add = $("#addTask");
+const btn_submit = $("#itemSubmit");
+const btn_cancel = $("#itemCancel");
+// const btn_edit = $("#itemEdit");
+// const btn_delete = $("#itemDelete");
 
-const itemList = document.querySelector('#area-list-task');
+const input_id = $("#input-id");
+const input_name = $("#input-name");
+const input_level = $("#input-level");
 
-const LOCAL             = 'task_list';
-
-const TODOLIST = []
+const itemList = document.querySelector("#area-list-task");
