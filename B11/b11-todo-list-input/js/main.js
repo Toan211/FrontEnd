@@ -66,7 +66,25 @@ btn_add.click( (e) => {
     resetForm();
 });
 
+btn_search.click((e) => {
+    let value = input_search.val()
+    let data = getLocalStorage(LOCAL);
+    
+    if (value && value.trim().length > 0){
+        value = value.trim().toLowerCase()
+
+        let result = data.filter(element => {
+            return element.name.toLowerCase().includes(value)
+        })
+        console.log("result", result);
+         getList(result)
+    } else {
+        getList(data);  
+    }
+});
+
 $(document).ready(function () {
     let data = getLocalStorage(LOCAL);
     getList(data);  
+    
 });

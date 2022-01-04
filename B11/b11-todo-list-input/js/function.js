@@ -32,8 +32,7 @@ function danger(ele) {
     return [dangerClass,danger]
  }
 
-const getList = (data) => {
-    
+const getList = (data) => { 
     let str = '';
     data.forEach((element,index) => {
         
@@ -51,7 +50,6 @@ const getList = (data) => {
         `
     });
     itemList.html(str);
-    console.log("list = ", data);
 }
 
 const resetForm = () => {
@@ -73,7 +71,7 @@ const createRandomID = (length = 12) => {
     return str;
 };
 
-function deleteItem(id) {
+const deleteItem = (id) => {
     console.log("delete");
     let data = getLocalStorage(LOCAL); 
     
@@ -83,7 +81,7 @@ function deleteItem(id) {
     getList(data);
 };
 
-function editItem(id) {
+const editItem = (id) => {
     console.log("edit");
     let data = getLocalStorage(LOCAL); 
     
@@ -95,7 +93,7 @@ function editItem(id) {
    input_level.val(data[index].level);
 }   
 
-function onSort(name){
+const onSort = (name) => {
     console.log("click");
     let data = getLocalStorage(LOCAL);
     if (name == "name_asc")
@@ -140,3 +138,4 @@ function onSort(name){
     setLocalStorage(LOCAL, data);
     getList(data);
 }
+
