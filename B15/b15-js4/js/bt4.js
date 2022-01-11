@@ -6,8 +6,9 @@
 $(document).ready(function () {
     
     
-    $("select#inputstudy").change(function(){
-        var input = $(this).children("option:selected").val();
+    $("select#inputstudy").change(function(e){
+        e.preventDefault();
+        let input = $(this).children("option:selected").val();
         console.log(input);
     });
     
