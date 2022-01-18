@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.border{
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.pad-10{
+    padding: 10px;
+}
+
+.margin-top-10{
+    margin-top: 10px;
+}
+
+.margin-bot-10{
+    margin-bottom: 10px;
+}
+
+.margin-right-10{
+    margin-right: 10px;
+}
