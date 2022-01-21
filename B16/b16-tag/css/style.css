@@ -1,0 +1,12 @@
+.tagify{
+    --tag--max-width: 250px;
+    
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* enables text trim */
+  .tagify .tagify__tag-text{
+    white-space: nowrap;
+  }
+
