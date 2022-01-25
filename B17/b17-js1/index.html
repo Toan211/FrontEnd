@@ -7,16 +7,30 @@
     <title>jQuery UI Tabs - Default functionality</title>
     <link rel="stylesheet" href="./css/style.css" />
     
-
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
-
-    <script src="https://unpkg.com/libphonenumber-js@1.9.44/bundle/libphonenumber-min.js"></script>
-
 </head>
 
 <body>
+  
+    <div id="wrapper">
+      <table class="table">
+        <thead>
+          <tr style="background-color: rgba(0, 0, 0, 0.082);">
+            <th style="width: 50%">Tên</th>
+            <th style="width: 25%">Mua vào</th>
+            <th style="width: 25%">Bán ra</th>
+          </tr>
+        </thead>
+          <tbody id="gold-api">
+            
+          </tbody>
+          
+      </table>
+      <div class="loader"></div>
+    </div>
     
+
     <script src="./js/main.js"></script>
 </body>
 </html>

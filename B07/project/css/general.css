@@ -26,6 +26,10 @@ a {
 	margin: auto;
 }
 
+.line-full{
+	border: 1px solid #e5e5e5;
+}
+
 .line-w-60 {
 	width: 60px; /*60px*/
 	border: 1px solid white;
@@ -61,12 +65,20 @@ a {
 	margin-bottom: 60px;
 }
 
+.margin-top-60 {
+	margin-top: 60px;
+}
+
 .margin-bot-90 {
 	margin-bottom: 90px;
 }
 
 .margin-bot-15 {
 	margin-bottom: 15px;
+}
+
+.margin-bot-20 {
+	margin-bottom: 20px;
 }
 
 .roboto-light {
@@ -87,6 +99,7 @@ a {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 2rem;
+	color: #b6b6b6;
 }
 
 .montserrat-regular {
@@ -103,3 +116,4 @@ a {
 .kaushan {
 	font-family: "Kaushan Script", cursive;
 }
+

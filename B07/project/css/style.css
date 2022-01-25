@@ -7,8 +7,7 @@ w = 1920
 
 .header {
 	height: 1000px;
-	display: flex;
-	flex-direction: column;
+	
 }
 
 .header-banner {
@@ -69,22 +68,18 @@ w = 1920
 .header-content {
 	text-align: center;
 	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 85%;
+	margin-top: 105px;
 }
 
 .header-content-sub {
-	font-size: 9.6rem;
+	font-size: 9rem;
 	font-style: italic;
 	font-family: "Kaushan Script", cursive;
 	color: white;
 }
 
 .header-content-main a {
-	font-size: 20rem;
+	font-size: 17rem;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
@@ -101,21 +96,21 @@ w = 1920
 
 .header-content-btn {
 	margin-top: 60px;
+
 }
 
-.header-content-btn > a {
+.header-content-btn > button {
 	color: white;
 	text-transform: uppercase;
-	border: 3px solid white;
+	background-color: transparent;
+	border: 2px solid #ffffff;
 	font-size: 1.5rem;
 	font-family: "Montserrat", sans-serif;
 	padding: 12px 30px;
 }
 
 .header-banner-footer {
-	height: 6%;
-	display: flex;
-	align-items: flex-end;
+	margin-top: 100px;
 }
 
 .header-banner-footer > ul {
@@ -417,7 +412,7 @@ w = 1920
 	justify-content: space-between;
 }
 
-.about-us-image-contain > ul li > img {
+.our-team-image-contain > ul li > img {
 	width: 100%;
 }
 
@@ -440,26 +435,108 @@ w = 1920
 	display: flex;
 }
 
+.logo img {
+	width: 100%;
+}
+
 /* -----------------work--------------------- */
 
 .work {
-	height: 1190px;
+	
 	background-color: white;
 	text-align: center;
 }
 
 .work-image-contain {
-	height: 780px;
+	margin-top: 90px;
 	display: flex;
-	width: 100%;
+	align-items: flex-end;
+	
 }
 
 .work-image-contain-box {
-	width: 25%;
+	
+	font-size: 0rem;
+	display: flex;
+	flex-direction: column;
+    width: 25%;
+	
 }
 
-.work-image-contain div:nth-child(1) {
+/* ------------------quote 2------------------- */
+
+.quote2 {
+	background-color: #ffffff;
+}
+
+.quote2 .quote-content img{
+	border: none;
+}
+
+/* ---------------happy client------------------- */
+
+.client-banner {
+	height: 900px;
+	width: 100%;
+	background-image: url(../img/Layer53.png);
+	background-color: #b6b6b6;
+	opacity: 0.2;
+	background-repeat: no-repeat;
+	background-size: 100% 150%;
+	position: absolute;
+	z-index: -1;
+}
+
+.client-box ul{
 	display: flex;
-	width: 75%;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	row-gap: 75px;
+}
+
+.client-box > ul > li  {
+	width: 45%;
+	display: flex;
+}
+
+.client-box > ul li > img {
+	height: 70%;
+	
+}
+
+.client-box > ul li > div {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0 0 30px;
+	
+}
+
+.client-box > ul li > div > p{
+	line-height: 3rem;
+	
+}
+
+/* --------------------------our story-------------------- */
+
+.our-story-image-contain {
+	margin-top: 50px;
+	text-align: left;
+}
+
+.our-story-image-contain > ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.our-story-image-contain > ul li{
+	width: 30%;
+}
+
+
+.our-story-image-contain > ul li > img {
+	width: 100%;
+}
+
+.our-story-image-contain > ul li > div {
+	width: 100%;
 }
