@@ -518,25 +518,63 @@ w = 1920
 
 /* --------------------------our story-------------------- */
 
-.our-story-image-contain {
+.our-story-contain {
 	margin-top: 50px;
 	text-align: left;
 }
 
-.our-story-image-contain > ul {
+.our-story-contain > ul {
 	display: flex;
 	justify-content: space-between;
 }
 
-.our-story-image-contain > ul li{
+.our-story-contain > ul li{
 	width: 30%;
 }
 
 
-.our-story-image-contain > ul li > img {
+.our-story-contain > ul li > .our-story-contain-image > img {
 	width: 100%;
 }
 
-.our-story-image-contain > ul li > div {
-	width: 100%;
+.our-story-contain > ul li > .our-story-contain-image > .our-story-contain-image-day {
+	width: 60px;
+    height: 70px;
+    position: absolute;
+    bottom: 010px;
+    left: -10px;
+    background-color: #95e1d3;
+	text-align: center;
+	line-height: 25px;
+	padding: 3%
 }
+
+.our-story-contain > ul li > .our-story-contain-image > .our-story-contain-image-day  :first-child{
+	color: white;
+	font-size: 3rem;
+}
+
+.our-story-contain > ul li > .our-story-contain-image > .our-story-contain-image-day  :last-child{
+	color: white;
+	font-size: 1.4rem;
+}
+
+.our-story-contain > ul li .our-story-contain-context div a{
+	font-size: 1.5rem
+}
+
+.our-story-contain > ul li .our-story-contain-context div a i{
+	color: #95e1d3;
+}
+
+
+
+/* -------------------map---------------------------- */
+
+
+
+/* -----------------footer-blog--------------------- */
+
+
+
+/* ----------------------footer------------------------ */

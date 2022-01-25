@@ -102,6 +102,11 @@ a {
 	color: #b6b6b6;
 }
 
+.roboto-bold {
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+}
+
 .montserrat-regular {
 	font-family: "Montserrat", sans-serif;
 	text-transform: uppercase;
